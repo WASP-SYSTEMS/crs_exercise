@@ -1,0 +1,4 @@
+/mock-cp
+/venv
+*.pyc
+test.py
