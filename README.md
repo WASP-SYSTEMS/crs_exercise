@@ -1,7 +1,7 @@
 
 ## Task
 
-Your task is to implement a simple CRS cosisting of one agent. This agent 
+Your task is to implement a simple CRS consisting of one LLM tool-calling agent. This agent 
 should be able to fix the vulnerability in the given challenge project.
 
 ## Setup
@@ -22,7 +22,7 @@ make docker-config-local
 make docker-build
 ```
 
-Now you are ready build your agent in `minimal_crs.py`.
+Now you are ready implement your agent in `minimal_crs.py`.
 
 **NOTE**: Execute your the CRS by running `python3 minimal_crs.py` in the root directory of this project to prevent import errors.
 
