@@ -4,6 +4,17 @@
 Your task is to implement a simple CRS consisting of one LLM tool-calling agent. This agent 
 should be able to fix the vulnerability in the given challenge project.
 
+## Requirements
+
+- docker >= 24.0.5
+- python >= 3.10
+- GNU make >= 4.3
+- yq >= 4 (https://github.com/mikefarah/yq/)
+
+Me, when I have to build `yq` from source: (ノ ゜Д゜)ノ ︵ ┻━┻
+
+Maybe you can find the right pre build binaries at the release page.
+
 ## Setup
 
 Setup python environment:
