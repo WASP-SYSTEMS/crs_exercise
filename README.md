@@ -1,8 +1,11 @@
 
 ## Task
 
-Your task is to implement a simple CRS consisting of one LLM tool-calling agent. This agent 
-should be able to fix the vulnerability in the given challenge project.
+Your task is to implement a simple CRS consisting of one LLM tool-calling agent.
+To make things easier all the challenge project interaction is already implemented
+under `/project` (see `minimal_crs.py` for details).
+
+Your agent is only supposed to patch the vulnerability under the assumption that the vulnerability was already found.
 
 ## Requirements
 
