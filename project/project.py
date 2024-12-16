@@ -48,7 +48,7 @@ class AixccProject(BaseProject):
         return (self.src_path / "mock_vp.c").read_text()
     
     def write_source_code(self, code: str) -> str:
-        """Get the source code of the project."""
+        """Write the source code of the project."""
 
         return (self.src_path / "mock_vp.c").write_text(code)
     
@@ -56,7 +56,7 @@ class AixccProject(BaseProject):
         """
         Verify the patch and get feedback about what went wrong or if the patch is ok.
 
-        Returns compilation errors, crash report if the patch did not work.
+        Returns success, compilation errors or a crash report if the patch did not work.
         """
 
         # rebuild the project

@@ -5,7 +5,7 @@ from project.project import AixccProject
 OPENAI_API_BASE = ""
 OPENAI_API_KEY = ""
 
-# NOTE: The follwing project defintion makes the interaction with the challenge
+# NOTE: The following project defintion makes the interaction with the challenge
 #       project you are supposed to patch much, much easier. You ONLY need to use
 #       the public methods.
 

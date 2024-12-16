@@ -2,10 +2,11 @@
 ## Task
 
 Your task is to implement a simple CRS consisting of one LLM tool-calling agent.
-To make things easier all the challenge project interaction is already implemented
-under `/project` (see `minimal_crs.py` for details).
+To make things easier all the challenge project interaction is already implemented,
+so you **do not** have to read/write files in the project yourself (see `minimal_crs.py` for details).
 
-Your agent is only supposed to patch the vulnerability under the assumption that the vulnerability was already found.
+Your agent is only supposed to patch the vulnerability. So, you can assume a vulnerability
+was already found in the source code.
 
 ## Requirements
 
@@ -16,9 +17,11 @@ Your agent is only supposed to patch the vulnerability under the assumption that
 
 Me, when I have to build `yq` from source: (ノ ゜Д゜)ノ ︵ ┻━┻
 
-Maybe you can find the right pre build binaries at the release page.
+Maybe you can find the right pre-build binaries at the release page.
 
 ## Setup
+
+Execute the follwong commands in the root directory of this project:
 
 Setup python environment:
 ```bash
