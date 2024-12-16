@@ -43,20 +43,23 @@ class AixccProject(BaseProject):
         super().__init__(project_path, src_path_rel)
     
     def get_source_code(self) -> str:
-        """Get the source code of the project."""
+        """Get the (vulnerable) source code of the project."""
 
         return (self.src_path / "mock_vp.c").read_text()
     
     def write_source_code(self, code: str) -> str:
-        """Write the source code of the project."""
+        """(Over)write the source code of the project."""
 
         return (self.src_path / "mock_vp.c").write_text(code)
     
     def verify_patch(self) -> str:
         """
-        Verify the patch and get feedback about what went wrong or if the patch is ok.
+        Verify the patch.
 
-        Returns success, compilation errors or a crash report if the patch did not work.
+        This function returns the follwing feedback in human (LLM) readable format:
+            - If compilation errors occurred
+            - If program crashes (vulnerabilty persists)
+            - If the patch works
         """
 
         # rebuild the project
@@ -91,6 +94,8 @@ class AixccProject(BaseProject):
             )
         
         return f"Ooops something went wrong: \n ```json\n{test_out.model_dump_json()}\n```\n"
+
+    # ALL FUNCTIONS BELOW THIS DO NOT CONCERN YOU ##################################################
 
     def _build(self) -> RunResult:
         "Build the CP"
