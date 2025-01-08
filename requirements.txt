@@ -2,3 +2,4 @@ GitPython==3.1.43
 langchain-openai==0.2.9
 langgraph==0.2.52
 pydantic==2.10.3
+langchain_core==0.3.25
