@@ -21,7 +21,7 @@ Me, when I have to build `yq` from source: (ノ ゜Д゜)ノ ︵ ┻━┻
 
 ## Setup
 
-Execute the follwong commands in the **root directory** of this project:
+Execute the following commands in the **root directory** of this project:
 
 Setup python environment:
 ```bash
@@ -39,7 +39,7 @@ make docker-config-local
 make docker-build
 ```
 
-To test your setup run `python3 test_setup.py` in the root directory of this project.
+To test your setup run `python3 test_setup.py`.
 
 Export OpenAI API-key:
 ```bash
