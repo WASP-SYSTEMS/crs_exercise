@@ -48,6 +48,8 @@ Export OpenAI API-key:
 export OPENAI_API_KEY=<your key>
 ```
 
+You will receive a (temporary) API key from us after you send a minimal (pseudocode) implementation to meierm@cs.uni-bonn.de.
+
 Now you are ready implement your agent in `minimal_crs.py`.
 
 **NOTE**: The only files which are relevant to you are `minimal_crs.py` and public methods of the class `AixccProject` in `project/project.py`.
