@@ -17,11 +17,11 @@ was already found in the source code.
 
 Me, when I have to build `yq` from source: (ノ ゜Д゜)ノ ︵ ┻━┻
 
-Maybe you can find the right pre-build binaries at the release page.
+(Maybe you can find the right pre-build binaries at the release page.)
 
 ## Setup
 
-Execute the follwong commands in the root directory of this project:
+Execute the follwong commands in the **root directory** of this project:
 
 Setup python environment:
 ```bash
@@ -39,9 +39,14 @@ make docker-config-local
 make docker-build
 ```
 
+Export OpenAI API-key:
+```bash
+export OPENAI_API_KEY=<your key>
+```
+
 Now you are ready implement your agent in `minimal_crs.py`.
 
-**NOTE**: Execute your the CRS by running `python3 minimal_crs.py` in the root directory of this project to prevent import errors.
+**NOTE**: Execute your the CRS by running `python3 minimal_crs.py` in the **root directory** of this project to prevent import errors.
 
 ## Helpful links
 
