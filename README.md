@@ -21,6 +21,8 @@ Me, when I have to build `yq` from source: (ノ ゜Д゜)ノ ︵ ┻━┻
 
 ## Setup
 
+Please make sure that your user is added to the docker group and you do not have to execute docker using `sudo`, because the helper scripts we use call docker without `sudo`.
+
 Execute the following commands in the **root directory** of this project:
 
 Setup python environment:
