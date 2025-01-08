@@ -50,7 +50,9 @@ class AixccProject(BaseProject):
     def write_source_code(self, code: str) -> str:
         """(Over)write the source code of the project."""
 
-        return (self.src_path / "mock_vp.c").write_text(code)
+        (self.src_path / "mock_vp.c").write_text(code)
+
+        return "Source code successfully written."
     
     def verify_patch(self) -> str:
         """
