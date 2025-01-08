@@ -89,7 +89,7 @@ class AixccProject(BaseProject):
         
         if 1 < test_out.return_code < 125:
             return (
-                "The program did not crash, but"
+                "The program did not crash, but "
                 f"the tests failed:\n ```json\n{test_out.model_dump_json()}\n```\n"
             )
         
