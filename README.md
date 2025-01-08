@@ -39,12 +39,17 @@ make docker-config-local
 make docker-build
 ```
 
+To test your setup run `python3 test_setup.py` in the root directory of this project.
+
 Export OpenAI API-key:
 ```bash
 export OPENAI_API_KEY=<your key>
 ```
 
 Now you are ready implement your agent in `minimal_crs.py`.
+
+**NOTE**: The only files which are relevant to you are `minimal_crs.py` and public methods of the class `AixccProject` in `project/project.py`.
+**You do not have to look at any other files!** All source code interaction is done for you through the `AixccProject` class.
 
 **NOTE**: Execute your the CRS by running `python3 minimal_crs.py` in the **root directory** of this project to prevent import errors.
 
